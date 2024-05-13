@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
 //const mongoURL = process.env.MONGODB_URL_LOCAL;
-const DATABASE_URL = process.env.MONGODB_URL;
+const DATABASE_URL = "mongodb+srv://skkhot29:Sushant4575@users.fsy8yso.mongodb.net/?retryWrites=true&w=majority&appName=users";
 
 mongoose.connect(DATABASE_URL, {
   useNewUrlParser: true,
