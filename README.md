@@ -1,4 +1,4 @@
-<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Alt text" width="700" title="Optional title">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Alt text" width="400" title="Optional title">
 
 # GET_YouTube_Subscribers
 
@@ -80,10 +80,10 @@ nodemon
 
 ## Badges
 
-[![Node.js](https://img.shields.io/badge/Node.js-v16.9.1-green.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-v21.6.1-green.svg)](https://nodejs.org/)
 
-[![Express](https://img.shields.io/badge/Express-v4.17.1-blue.svg)](https://expressjs.com/)
+[![Express](https://img.shields.io/badge/Express-v4.19.2-blue.svg)](https://expressjs.com/)
 
-[![MongoDB](https://img.shields.io/badge/MongoDB-v5.1.1-green.svg)](https://www.mongodb.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-v7.0.8-green.svg)](https://www.mongodb.com/)
 
-[![Mongoose](https://img.shields.io/badge/Mongoose-v6.0.9-blue.svg)](https://mongoosejs.com/)
+[![Mongoose](https://img.shields.io/badge/Mongoose-v8.3.4-blue.svg)](https://mongoosejs.com/)
