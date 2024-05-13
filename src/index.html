@@ -44,7 +44,7 @@
 
     hr {
       border: none;
-      border-top: 1px solid #ccc;
+      border-top: 2px solid #ccc;
       margin: 20px 0;
     }
 
@@ -64,6 +64,7 @@
       background-color: rgb(248, 35, 77);
       padding: 8px 12px;
       border-radius: 5px;
+      border-color: #ccc;
       transition: background-color 0.3s ease;
     }
 
@@ -97,16 +98,19 @@
     <hr />
     <h2 class="text">These are the routes in this API</h2>
     <hr />
-    <p class="text">You can try entering each route using the routes given below</p>
+    <h4 class="text">You can try entering each route using the routes given below</h4>
     <hr />
     <!-- Some info about routes -->
     <ul>
-      <li>Add <a class="routes" href="/subscribers">Subscribers</a> in URL : Provides an array of all subscribers in
+      <li>Add <a class="routes" href="/subscribers">/subscribers</a> in URL : Provides an array of all subscribers in
         the database.</li>
-      <li>Add <a class="routes" href="/subscribers/names">Subscribers by Names</a> in URL : Provides an array of
+        <hr />
+      <li>Add <a class="routes" href="/subscribers/names">/subscribers/names</a> in URL : Provides an array of
         subscribers with only two fields name and subscribedChannel</li>
-      <li>Add <a class="routes" href="/subscribers/64480ca582addf25ac622b28">Subscribers by id</a> in URL: Provides the
+        <hr />
+      <li>Add <a class="routes" href="/subscribers/64480ca582addf25ac622b28">/subscribers/:id</a> in URL: Provides the
         details of a subscriber with the given ID.</li>
+        <hr />
     </ul>
   </div>
 </body>
