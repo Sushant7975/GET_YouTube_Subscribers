@@ -13,10 +13,10 @@ app.use(express.urlencoded({ extended: false }));
 // const mongoURL = process.env.MONGODB_URL_LOCAL;
 const DATABASE_URL = process.env.MONGODB_URL_ATLAS;
 
-mongoose.connect(DATABASE_URL, {
+mongoose.connect(DATABASE_URL, /*{
   useNewUrlParser: true,
   useUnifiedTopology: true,
-});
+}*/);
 const db = mongoose.connection;
 db.on("error", (err) => console.log(err));
 db.once("open", () => console.log("Connected to database"));
