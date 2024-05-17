@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
-// const mongoURL = process.env.MONGODB_URL_LOCAL;
-const DATABASE_URL = process.env.MONGODB_URL_ATLAS;
+
+const DATABASE_URL = process.env.MONGODB_URL_ATLAS || process.env.MONGODB_URL_LOCAL;
 
 mongoose.connect(DATABASE_URL, /*{
   useNewUrlParser: true,
