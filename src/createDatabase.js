@@ -3,7 +3,8 @@ const subscriberModel = require('./models/subscribers');
 const data = require('./data');
 require('dotenv').config();
 
-const DATABASE_URL = process.env.MONGODB_URL_ATLAS || process.env.MONGODB_URL_LOCAL;
+const DATABASE_URL = "mongodb+srv://skkhot29:skkhot4575@subscribers.skktd3y.mongodb.net/" || "mongodb://127.0.0.1:27017/users";
+//const DATABASE_URL = process.env.MONGODB_URL_ATLAS || process.env.MONGODB_URL_LOCAL;
 
 //Connecting to MongoDB using Mongoose
 mongoose.connect(DATABASE_URL, /*{
