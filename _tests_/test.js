@@ -1,10 +1,11 @@
-const chai = import("chai");
-const app = require("../src/app");
-const chaiHttp = require("chai-http");
-const subscribers = require("../src/models/subscribers");
-
-const expect = chai.expect;
+const chai = import('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
 chai.use(chaiHttp);
+
+const app = require("../src/app");
+// const chaiHttp = require("chai-http");
+const subscribers = require("../src/models/subscribers");
 
 describe("API Testing", () => {
   describe("/", () => {
