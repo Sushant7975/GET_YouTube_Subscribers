@@ -3,11 +3,12 @@ const chaiHttp = require('chai-http');
 const { expect } = chai;
 chai.use(chaiHttp);
 const app = require("../src/app");
+const server= require('../index')
 
 
 describe("API Testing", () => {
   
-  describe("/", () => {
+  describe("homepage", () => {
     it("should render html file", (done) => {
       chai
         .request(app)
@@ -19,4 +20,45 @@ describe("API Testing", () => {
         });
     });
   });
+
+  describe('GET /subscribers', () => {
+    it('should get data of all subscribers', (done) => {
+      chai.request(server)
+        .get('/subscribers')
+        .end((err, res) => {
+          if (err) return done(err);
+          expect(res).to.have.status(200);
+          expect(res.body).to.be.an('array');
+          done();
+      })
+    })
+  })
+
+  describe('GET /subscribers/names', () => {
+    it('should get data of names and subscribedChannel of all subscribers', (done) => {
+      chai.request(server)
+        .get('/subscribers/names')
+        .end((err, res) => {
+          if (err) return done(err);
+          expect(res).to.have.status(200);
+          expect(res.body).to.be.an('array');
+          done();
+      })
+    })
+  })
+
+  describe('GET /subscribers/:id', () => {
+    it('should get data of single subcriber by id', (done) => {
+      const subscriberId= "664a5404403251b8e11c280a"
+
+      chai.request(server)
+        .get(`/subscribers/${subscriberId}`)
+        .end((err, res) => {
+          if (err) return done(err);
+          expect(res).to.have.status(200);
+          expect(res.body).to.be.an('object');
+          done();
+      })
+    })
+  })
 });
