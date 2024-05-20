@@ -49,7 +49,7 @@ describe("API Testing", () => {
 
   describe('GET /subscribers/:id', () => {
     it('should get data of single subcriber by id', (done) => {
-      const subscriberId= "664a5404403251b8e11c280a"
+      const subscriberId= "664bc64d60e1eb6d9996f8df"
 
       chai.request(server)
         .get(`/subscribers/${subscriberId}`)
